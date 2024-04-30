@@ -6,6 +6,8 @@ defmodule NasaCalculator.MixProject do
       app: :nasa_calculator,
       version: "0.1.0",
       elixir: "~> 1.16",
+      compilers: [:yecc] ++ Mix.compilers(),
+      compilers: [:leex] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
