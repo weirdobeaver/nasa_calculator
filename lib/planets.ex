@@ -13,5 +13,5 @@ defmodule NasaCalculator.Planets do
     end
   end
 
-  def get_planet_gravity(_), do: {:error, "Please provide valid data type."}
+  def get_planet_gravity(_), do: {:error, "Please provide valid planet data type."}
 end

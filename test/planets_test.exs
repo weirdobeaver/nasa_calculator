@@ -17,7 +17,7 @@ defmodule NasaCalculator.PlanetsTest do
     end
 
     test "returns error if invalid type provided" do
-      assert Planets.get_planet_gravity(nil) == {:error, "Please provide valid data type."}
+      assert Planets.get_planet_gravity(nil) == {:error, "Please provide valid planet data type."}
     end
   end
 end
